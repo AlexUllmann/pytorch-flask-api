@@ -1,0 +1,12 @@
+# Ignore Python virtual environments
+/flask/
+/venv/
+/.venv/
+
+# Ignore compiled files
+__pycache__
+*.pyc
+
+# Ignore model files if they are huge and you redownload them on deploy
+# (If your .pth file is small, you can delete the line below)
+# *.pth
