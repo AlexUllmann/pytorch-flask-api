@@ -28,7 +28,7 @@ class NeuralNet(nn.Module):
         # no activation and no softmax at the end
         return out
 model = NeuralNet(input_size, hidden_size, num_classes)
-PATH = "mnist_ffn.pth"
+PATH = "app/mnist_ffn.pth"
 model.load_state_dict(torch.load(PATH))
 model.eval()
 
